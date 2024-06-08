@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "paula_backend": {
+      "main": "src/paula_backend/main.mo",
+      "type": "motoko"
+    },
+    "paula_frontend": {
+      "dependencies": [
+        "paula_backend"
+      ],
+      "source": [
+        "src/paula_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "paula_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
